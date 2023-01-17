@@ -1,0 +1,1 @@
+npm install --save-exact normalizr@3.6.2

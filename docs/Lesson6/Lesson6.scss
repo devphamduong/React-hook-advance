@@ -1,0 +1,19 @@
+.lesson6-container {
+    padding: 50px;
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        input {
+            max-width: 350px;
+            padding: 5px;
+        }
+
+        .invalid {
+            color: red;
+            margin:0;
+        }
+    }
+}

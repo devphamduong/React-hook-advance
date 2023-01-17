@@ -1,0 +1,28 @@
+
+.l40-plus {
+    h1 {
+        font-size: 1.5em
+    }
+
+    input,
+    button {
+        min-width: 72px;
+        min-height: 36px;
+        border: 1px solid grey;
+        padding: 2px 5px;
+    }
+
+    label,
+    input,
+    button {
+        display: block;
+    }
+
+    input {
+        margin-bottom: 1em;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,8 @@
+- Cài đặt thư viện để dùng SASS: npm install --save-exact sass@1.54.5
+- Ví dụ về Angular:
+Angular 2 example: 
+https://angular.io/guide/two-way-binding
+
+https://codesandbox.io/s/two-way-data-binding-example-forked-kxbrcp?file=/src/app/app.component.html
+
+

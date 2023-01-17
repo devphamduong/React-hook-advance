@@ -1,0 +1,23 @@
+.lesson9-container {
+    padding: 50px;
+
+    .input-group {   
+        input {
+            margin-bottom: 10px;
+        }
+    }
+    .parent {
+        width: 350px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 100px;
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-decoration: underline;
+        }
+    }
+}

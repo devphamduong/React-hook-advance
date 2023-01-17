@@ -1,0 +1,9 @@
+Google play: https://play.google.com/store/apps
+
+- Install react hook form: 
+npm install --save-exact react-hook-form@7.34.2
+
+- React hook form: https://www.react-hook-form.com/
+
+- Formik: https://formik.org/
+
