@@ -1,0 +1,15 @@
+.primary, .danger, .warning {
+    border: 1px solid;
+}
+
+.primary {
+    background-color: aqua;
+}
+
+.danger {
+    background-color: rgb(210, 73, 73);
+}
+
+.warning {
+    background-color: orange;
+}
