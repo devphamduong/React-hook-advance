@@ -1,0 +1,24 @@
+.login-form-container {
+    padding: 50px;
+    .group-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        input {
+            max-width: 350px;
+            height: 30px;
+            padding: 3px 5px;
+        }
+    }
+    button {
+        border: none;
+        outline: none;
+        background-color: #ccc;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+}
