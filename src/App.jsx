@@ -3,8 +3,9 @@ import './App.css';
 import NavBar from './components/Header/NavBar';
 import Content from './components/Main/Content';
 import Lesson3 from './lessons/Lesson3/Lesson3';
-import Footer from './components/Footer/Footer';
 import Lesson4 from './lessons/Lesson4/Lesson4';
+import Lesson5 from './lessons/Lesson5/Lesson5';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -17,7 +18,8 @@ const App = () => {
         setCount={setCount}
       /> */}
       {/* <Lesson3 /> */}
-      <Lesson4 />
+      {/* <Lesson4 /> */}
+      <Lesson5 />
       <Footer />
     </div>
   );
