@@ -6,7 +6,7 @@ import Lesson18 from "./chapter3/Lesson18";
 import Lesson19 from "./chapter3/Lesson19";
 import Lesson20 from "./chapter3/Lesson20";
 import Lesson21 from "./chapter3/Lesson21";
-// import Lesson22 from "./chapter3/Lesson22";
+import Lesson22 from "./chapter3/Lesson22";
 // import Lesson23 from "./chapter3/Lesson23";
 // import Lesson24 from "./chapter3/Lesson24";
 // import Lesson25 from "./chapter3/Lesson25";
@@ -20,8 +20,8 @@ const Project = (props) => {
             {/* <Lesson18 /> */}
             {/* <Lesson19 /> */}
             {/* <Lesson20 /> */}
-            <Lesson21 />
-            {/* <Lesson22 /> */}
+            {/* <Lesson21 /> */}
+            <Lesson22 />
             {/* <Lesson23 /> */}
             {/* <Lesson24 /> */}
             {/* <Lesson25 /> */}
