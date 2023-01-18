@@ -28,7 +28,8 @@ const App = () => {
       {/* <Lesson6 /> */}
       {/* <Lesson7 /> */}
       {/* <Lesson8 /> */}
-      <Lesson9 />
+      {/* <Lesson9 /> */}
+      <Lesson10 />
       <Footer />
     </div>
   );

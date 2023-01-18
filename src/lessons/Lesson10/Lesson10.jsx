@@ -1,15 +1,13 @@
 import CalculateVAT from './CalculateVAT';
 import './Lesson10.scss';
 
-
-
 const Lesson10 = (props) => {
     //  pure function
     function calculateVAT(productPrice) {
         return productPrice * 0.05;
     }
 
-    console.log(">>> VAT === ", calculateVAT(100))
+    console.log(">>> VAT === ", calculateVAT(100));
 
 
     // ex not pure (impure) function (không phụ thuộc vào input đầu vào)
@@ -23,7 +21,7 @@ const Lesson10 = (props) => {
         tax = 80;
     }
     doSomething();
-    console.log(">>> VAT impure === ", calculateVAT1(100))
+    console.log(">>> VAT impure === ", calculateVAT1(100));
 
 
 
@@ -37,13 +35,13 @@ const Lesson10 = (props) => {
             <CalculateVAT /> */}
 
             {/* pure component */}
-            {/* <CalculateVAT tax={5} price={100} />
             <CalculateVAT tax={5} price={100} />
-            <CalculateVAT tax={5} price={100} /> */}
+            <CalculateVAT tax={5} price={100} />
+            <CalculateVAT tax={5} price={100} />
 
 
         </div>
-    )
-}
+    );
+};
 
 export default Lesson10;
