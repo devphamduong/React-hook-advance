@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import CalculateVAT from './CalculateVAT';
 import './Lesson10.scss';
 
