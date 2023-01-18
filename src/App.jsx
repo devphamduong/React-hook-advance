@@ -7,6 +7,7 @@ import Lesson4 from './lessons/Lesson4/Lesson4';
 import Lesson5 from './lessons/Lesson5/Lesson5';
 import Lesson6 from './lessons/Lesson6/Lesson6';
 import Lesson7 from './lessons/Lesson7/Lesson7';
+import Lesson8 from './lessons/Lesson8/Lesson8';
 import Footer from './components/Footer/Footer';
 
 const App = () => {
@@ -23,7 +24,8 @@ const App = () => {
       {/* <Lesson4 /> */}
       {/* <Lesson5 /> */}
       {/* <Lesson6 /> */}
-      <Lesson7 />
+      {/* <Lesson7 /> */}
+      <Lesson8 />
       <Footer />
     </div>
   );
