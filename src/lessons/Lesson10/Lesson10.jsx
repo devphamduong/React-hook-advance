@@ -1,7 +1,17 @@
+import { useRef } from 'react';
 import CalculateVAT from './CalculateVAT';
 import './Lesson10.scss';
 
 const Lesson10 = (props) => {
+    const firstRender = useRef(true);
+    useEffect(() => {
+        if (firstRender) {
+            console.log('first render');
+        }
+        if (firstRender && firstRender.current) {
+            firstRender.current = false;
+        }
+    }, []);
     //  pure function
     function calculateVAT(productPrice) {
         return productPrice * 0.05;
