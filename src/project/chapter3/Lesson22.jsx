@@ -1,10 +1,10 @@
 const Lesson22 = (props) => {
     const obj = {
         name: 'abc',
-        address: 'hn',
+        // address: 'hn',
 
-        //
-        name: 'def'
+        // //
+        // name: 'def'
     };
 
     console.log(">>> ", obj);
