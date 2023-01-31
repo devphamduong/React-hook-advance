@@ -15,6 +15,7 @@ import Lesson27 from "./chapter4/lesson27/Lesson27";
 import Lesson28 from "./chapter4/lesson28/Lesson28";
 import Lesson29 from "./chapter4/lesson29/Lesson29";
 import Lesson30 from "./chapter4/lesson30/Lesson30";
+import Lesson32 from "./chapter4/lesson32/Lesson32";
 
 const Project = (props) => {
     return (
@@ -33,7 +34,8 @@ const Project = (props) => {
             {/* <Lesson27 /> */}
             {/* <Lesson28 /> */}
             {/* <Lesson29 /> */}
-            <Lesson30 />
+            {/* <Lesson30 /> */}
+            <Lesson32 />
         </div>
     );
 };
