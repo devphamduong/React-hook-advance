@@ -8,7 +8,7 @@ const Timer = (props) => {
             return;
         }
         const timer = setInterval(() => {
-            setCount(count - 1);
+            setCount(count => count - 1);
         }, 1000);
 
         return () => {
