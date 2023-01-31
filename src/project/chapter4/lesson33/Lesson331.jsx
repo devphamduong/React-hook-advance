@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useImmer } from "use-immer";
 
 const Lesson331 = (props) => {
     // const [person, setPerson] = useState(
@@ -10,7 +11,7 @@ const Lesson331 = (props) => {
 
     // );
 
-    const [person, setPerson] = useState({
+    const [person, setPerson] = useImmer({
         username: '',
         email: 'Hỏi Dân IT',
         password: '',
@@ -21,12 +22,15 @@ const Lesson331 = (props) => {
     });
 
     const handleOnChangeCountry = (event) => {
-        setPerson({
-            ...person,
-            address: {
-                ...person.address,
-                country: event.target.value
-            }
+        // setPerson({
+        //     ...person,
+        //     address: {
+        //         ...person.address,
+        //         country: event.target.value
+        //     }
+        // });
+        setPerson((draft) => {
+            draft.address.country = event.target.value;
         });
     };
 
