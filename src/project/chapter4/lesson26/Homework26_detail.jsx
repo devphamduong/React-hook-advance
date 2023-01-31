@@ -9,7 +9,6 @@ import User from "./User";
  * Ở đây, truyền vào mặc định là getUserWithPaginate (1, 3) để có dữ liệu
  */
 const Homework26 = (props) => {
-    const [listUser, setListUser] = useState([]);
     /**
      * Hiển thị list user lấy được ra view
      * Mỗi 1 user là 1 component
@@ -17,13 +16,15 @@ const Homework26 = (props) => {
      * Có thêm option để show/hide hình ảnh tại mỗi user
      * Tự CSS để có 1 giao diện 'tương đối' và dễ nhìn ^^
      */
+
+    const { listUser, setListUser } = props;
+
     useEffect(() => {
-        getUser();
-    }, []);
-    const getUser = async () => {
-        let res = await getUserWithPaginate(1, 3);
-        setListUser(res.DT.users);
-    };
+        if (props.newUser && props.newUser.id) {
+            setListUser([props.newUser, ...listUser]);
+        }
+    }, [props.newUser]);
+
     return (
         <div className="list-users">
             {listUser && listUser.length > 0 &&

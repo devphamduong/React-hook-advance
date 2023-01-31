@@ -1,12 +1,24 @@
 .list-users {
     display    : flex;
     gap        : 30px;
+    flex-wrap  : wrap;
     padding-top: 30px;
 
     .detail-user {
         border       : 1px dashed;
         padding      : 10px;
         border-radius: 5px;
-        min-width    : 260px;
+        width        : 200px;
+
+        div {
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            img {
+                height: 150px;
+                margin: 10px 0;
+            }
+        }
     }
 }

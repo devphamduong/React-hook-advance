@@ -17,7 +17,7 @@ const User = (props) => {
                 <button onClick={() => setShow(!show)}>Hide/Show Images</button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default User;
