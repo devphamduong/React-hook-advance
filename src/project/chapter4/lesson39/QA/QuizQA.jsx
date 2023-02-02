@@ -169,6 +169,12 @@ const QuizQA = (props) => {
         }
         if (type === 'REMOVE') {
             if (objDapAn[anwserId]) {
+                setObjCauHoi(draft => {
+                    let newAnswers = objCauHoi[questionId].answers.filter(item => item !== anwserId);
+                    draft[questionId].answers = newAnswers;
+                });
+            }
+            if (objDapAn[anwserId]) {
                 setObjDapAn(draft => {
                     delete draft[anwserId];
                 });
@@ -196,28 +202,21 @@ const QuizQA = (props) => {
     };
 
     const handleAnswerQuestion = (type, answerId, questionId, value) => {
-        let questionsClone = _.cloneDeep(questions);
-        let index = questionsClone.findIndex(item => item.id === questionId);
-        if (index > -1) {
-            questionsClone[index].answers =
-                questionsClone[index].answers.map(answer => {
-                    if (answer.id === answerId) {
-                        if (type === 'CHECKBOX') {
-                            answer.isCorrect = value;
-                        }
-                        if (type === 'INPUT') {
-                            answer.description = value;
-                        }
-                    }
-                    return answer;
-                });
-
-            setQuestions(questionsClone);
+        if (objDapAn[answerId]) {
+            setObjDapAn(draft => {
+                if (type === 'CHECKBOX') {
+                    objDapAn[answerId].isCorrect = value;
+                }
+                if (type === 'INPUT') {
+                    objDapAn[answerId].description = value;
+                }
+            });
         }
-
     };
 
     const handleSubmitQuestionForQuiz = async () => {
+
+        return;
         //todo
         if (_.isEmpty(selectedQuiz)) {
             toast.error("Please choose a Quiz!");
